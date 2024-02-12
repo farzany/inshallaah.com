@@ -1,11 +1,13 @@
 import React from 'react';
 import nyt from './nyt.png';
+import bmc from './bmc.png';
+import heart from './heart.png';
 
 function App() {
   return (
-    <div className="flex justify-center items-center w-screen min-h-screen font-inter text-gray-800 overflow-y-scroll my-12 lg:my-48">
+    <div className="flex justify-center items-center w-screen min-h-screen font-inter text-gray-800 overflow-y-scroll py-12 lg:py-48 relative">
       <div className='flex justify-center flex-col items-center h-fit w-[600px] p-6 lg:p-0'>
-        <h1 className='w-full font-merienda font-bold text-7xl lg:text-8xl'>
+        <h1 className='w-full font-merienda font-bold text-7xl lg:text-8xl ml-[-13.5px]'>
           Inshallah
         </h1>
         <div id='tags' className='w-full mt-8 flex gap-3'>
@@ -33,7 +35,7 @@ function App() {
               </span>
               <div className="flex flex-col gap-2">
                 <span className="mt-2">
-                  "Inshallah we go to Disney Land next year!"
+                  "Inshallah we go on vacation this summer!"
                 </span>
               </div>
             </li>
@@ -43,10 +45,10 @@ function App() {
               </span>
               <div className="flex flex-col gap-2">
                 <span className="mt-2">
-                  "Mom, can we go to Disney Land?"
+                  "Mom, can we go on vacation this summer?"
                 </span>
                 <span>
-                  "Inshallah, habibi"
+                  "Inshallah, habibi."
                 </span>
               </div>
             </li>
@@ -56,7 +58,7 @@ function App() {
               </span>
               <div className="flex flex-col gap-2">
                 <span className="mt-2">
-                  "Honey, are you sure we can afford a trip to Disney Land?"
+                  "Honey, are you sure we can afford a vacation?"
                 </span>
                 <span>
                   "I think so. Things will work out, Inshallah."
@@ -69,7 +71,7 @@ function App() {
               </span>
               <div className="flex flex-col gap-2">
                 <span className="mt-2">
-                  "Inshallah I pass my exams so we can go to Disney Land."
+                  "Inshallah I pass my exams so we can go on vacation."
                 </span>
               </div>
             </li>
@@ -84,6 +86,30 @@ function App() {
             Whatever language you speak, “inshallah” can bring you hope. When I was growing up, my family used ...
           </p>
         </a>
+        <div className="mt-12 lg:mt-20 mb-20 lg:mb-0 w-full flex items-center flex-col">
+          <h4 className="text-3xl font-semibold mb-6 text-center">
+            Inshallah you'll buy me a coffee 🤲
+          </h4>
+          <a
+            className="bg-yellow-200 py-3 px-5 rounded-lg flex gap-2 justify-center items-center w-fit"
+            href="https://www.buymeacoffee.com/farzany"
+            target='_blank'
+            rel="noreferrer"
+          >
+            <img src={bmc} className="h-[26px]" alt="Buy Me a Coffee logo"/>
+            <span className="text-2xl font-semibold">
+              Buy me a coffee {'<3'}
+            </span>
+          </a>
+        </div>
+        <footer className="absolute bottom-0 pb-8 font-medium text-lg">
+          <span className="flex justify-center items-center">
+            Made with
+            <img src={heart} className="h-5 px-[6px]" alt="Love"/>
+            by
+            <a className="pl-[6px] underline decoration-2" href="https://www.youtube.com/@farzany" target='_blank' rel="noreferrer">Farzan Yazdanjou</a>
+          </span>
+        </footer>
       </div>
     </div>
   );
