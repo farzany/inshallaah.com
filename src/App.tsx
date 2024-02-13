@@ -1,105 +1,105 @@
 import React from 'react';
-import nyt from './images/nyt.png';
 import bmc from './images/bmc.png';
 import heart from './images/heart.png';
+import nyt from './images/nyt.png';
 
 export default function App() {
   return (
-    <div className="flex justify-center items-center w-screen min-h-screen font-inter text-gray-800 overflow-y-scroll py-12 lg:py-48 relative">
-      <div className='flex justify-center flex-col items-center h-fit w-[600px] p-6 lg:p-0'>
-        <h1 className='w-full font-merienda font-bold text-7xl lg:text-8xl ml-[-13.5px]'>
+    <div className="relative flex min-h-screen w-screen items-center justify-center overflow-y-scroll py-12 font-inter text-gray-800 lg:py-48">
+      <div className="flex h-fit w-[600px] flex-col items-center justify-center p-6 lg:p-0">
+        <h1 className="ml-[-13.5px] w-full font-merienda text-7xl font-bold lg:text-8xl">
           Inshallah
         </h1>
-        <div id='tags' className='w-full mt-8 flex gap-3'>
-          <span className="text-xl bg-gray-500 py-0.5 px-2 rounded font-bold text-white">
+        <div id="tags" className="mt-8 flex w-full gap-3">
+          <span className="rounded bg-gray-500 px-2 py-0.5 text-xl font-bold text-white">
             Arabic Expression
           </span>
         </div>
-        <span className='w-full text-3xl ml-[-5px] font-medium pt-4 text-gray-500'>
+        <span className="ml-[-5px] w-full pt-4 text-3xl font-medium text-gray-500">
           [ in · shāʾ · Allāh ]
         </span>
-        <p className="w-full border-l-4 pl-2 border-gray-400 text-2xl font-medium mt-6 text-gray-700">
-          Literally, "if God wills it" or "God willing".
+        <p className="mt-6 w-full border-l-4 border-gray-400 pl-2 text-2xl font-medium text-gray-700">
+          {`Literally, "if God wills it" or "God willing".`}
         </p>
-        <p className="w-full mt-8 text-xl">
-          A heartfelt expression that intertwines hope with the acceptance of divine will. It's used warmly to convey optimism for the future, acknowledging that everything happens according to a greater plan. Whether making plans, facing uncertainties, or expressing hopes and wishes, "Inshallah" is a gentle reminder of our reliance on and trust in the divine. It's a phrase that brings comfort and fosters a sense of peace, reminding us that we are not alone in our journey through life.
+        <p className="mt-8 w-full text-xl">
+          {`A heartfelt expression that intertwines hope with the acceptance of divine will. It's used warmly to convey optimism for the future, acknowledging that everything happens according to a greater plan. Whether making plans, facing uncertainties, or expressing hopes and wishes, "Inshallah" is a gentle reminder of our reliance on and trust in the divine. It's a phrase that brings comfort and fosters a sense of peace, reminding us that we are not alone in our journey through life.`}
         </p>
         <div className="w-full pt-12">
           <h2 className="text-2xl font-semibold">
             Examples & Use Cases
           </h2>
           <ul className="flex flex-col gap-2">
-            <li className="border-l-4 pl-2 border-gray-500 text-lg mt-4">
-              <span className="font-semibold text-xl">
+            <li className="mt-4 border-l-4 border-gray-500 pl-2 text-lg">
+              <span className="text-xl font-semibold">
                 Hope for Future Events
               </span>
               <div className="flex flex-col gap-2">
                 <span className="mt-2">
-                  "Inshallah we go on vacation this summer!"
+                  {`"Inshallah we go on vacation this summer!"`}
                 </span>
               </div>
             </li>
-            <li className="border-l-4 pl-2 border-gray-500 text-lg mt-4">
-              <span className="font-semibold text-xl">
+            <li className="mt-4 border-l-4 border-gray-500 pl-2 text-lg">
+              <span className="text-xl font-semibold">
                 Gentle Decline
               </span>
               <div className="flex flex-col gap-2">
                 <span className="mt-2">
-                  "Mom, can we go on vacation this summer?"
+                  {`"Mom, can we go on vacation this summer?"`}
                 </span>
                 <span>
-                  "Inshallah, habibi."
+                  {`"Inshallah, habibi."`}
                 </span>
               </div>
             </li>
-            <li className="border-l-4 pl-2 border-gray-500 text-lg mt-4">
-              <span className="font-semibold text-xl">
+            <li className="mt-4 border-l-4 border-gray-500 pl-2 text-lg">
+              <span className="text-xl font-semibold">
                 Responding to Uncertainty
               </span>
               <div className="flex flex-col gap-2">
                 <span className="mt-2">
-                  "Honey, are you sure we can afford a vacation?"
+                  {`"Honey, are you sure we can afford a vacation?"`}
                 </span>
                 <span>
-                  "I think so. Things will work out, Inshallah."
+                  {`"I think so. Things will work out, Inshallah."`}
                 </span>
               </div>
             </li>
-            <li className="border-l-4 pl-2 border-gray-500 text-lg mt-4">
-              <span className="font-semibold text-xl">
+            <li className="mt-4 border-l-4 border-gray-500 pl-2 text-lg">
+              <span className="text-xl font-semibold">
                 Success in Endeavors
               </span>
               <div className="flex flex-col gap-2">
                 <span className="mt-2">
-                  "Inshallah I pass my exams so we can go on vacation."
+                  {`"Inshallah I pass my exams so we can go on vacation."`}
                 </span>
               </div>
             </li>
           </ul>
         </div>
         <a
-          className="w-full flex flex-col mt-12 text-xl p-4 rounded-lg bg-gray-50 hover:bg-gray-100 hover:cursor-pointer overflow-hidden"
+          className="mt-12 flex w-full flex-col overflow-hidden rounded-lg bg-gray-50 p-4 text-xl hover:cursor-pointer hover:bg-gray-100"
           href="https://www.nytimes.com/2022/01/25/magazine/inshallah.html"
           rel="noreferrer"
-          target='_blank'
+          target="_blank"
         >
-          <img src={nyt} alt='New York Times Logo' className="w-[275px] -mb-8 -mt-12" />
-          <h3 className="font-merriweather font-bold text-[28px] leading-9">
+          <img src={nyt} alt="New York Times Logo" className="-mb-8 -mt-12 w-[275px]" />
+          <h3 className="font-merriweather text-[28px] font-bold leading-9">
             Are Better Things Coming? <span className="bg-yellow-200 px-2">Inshallah.</span>
           </h3>
           <p className="mt-3 text-xl">
             Whatever language you speak, “inshallah” can bring you hope. When I was growing up, my family used ...
           </p>
         </a>
-        <div className="mt-12 lg:mt-20 mb-20 lg:mb-0 w-full flex items-center flex-col">
-          <h4 className="text-3xl font-semibold mb-6 text-center">
-            Inshallah you'll buy me a coffee 🤲
+        <div className="mb-20 mt-12 flex w-full flex-col items-center lg:mb-0 lg:mt-20">
+          <h4 className="mb-6 text-center text-3xl font-semibold">
+            {"Inshallah you'll buy me a coffee 🤲"}
           </h4>
           <a
-            className="bg-yellow-200 py-3 px-5 rounded-lg flex gap-2 justify-center items-center w-fit"
+            className="flex w-fit items-center justify-center gap-2 rounded-lg bg-yellow-200 px-5 py-3"
             href="https://www.buymeacoffee.com/farzany"
             rel="noreferrer"
-            target='_blank'
+            target="_blank"
           >
             <img src={bmc} className="h-[26px]" alt="Buy Me a Coffee logo"/>
             <span className="text-2xl font-semibold">
@@ -107,12 +107,12 @@ export default function App() {
             </span>
           </a>
         </div>
-        <footer className="absolute bottom-0 pb-8 font-medium text-lg">
-          <span className="flex justify-center items-center">
+        <footer className="absolute bottom-0 pb-8 text-lg font-medium">
+          <span className="flex items-center justify-center">
             Made with
             <img src={heart} className="h-5 px-[6px]" alt="Love"/>
             by
-            <a className="pl-[6px] underline decoration-2" href="https://www.youtube.com/@farzany" target='_blank' rel="noreferrer">Farzan Yazdanjou</a>
+            <a className="pl-[6px] underline decoration-2" href="https://www.youtube.com/@farzany" target="_blank" rel="noreferrer">Farzan Yazdanjou</a>
           </span>
         </footer>
       </div>
