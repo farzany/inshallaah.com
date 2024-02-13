@@ -1,9 +1,9 @@
 import React from 'react';
-import nyt from './nyt.png';
-import bmc from './bmc.png';
-import heart from './heart.png';
+import nyt from './images/nyt.png';
+import bmc from './images/bmc.png';
+import heart from './images/heart.png';
 
-function App() {
+export default function App() {
   return (
     <div className="flex justify-center items-center w-screen min-h-screen font-inter text-gray-800 overflow-y-scroll py-12 lg:py-48 relative">
       <div className='flex justify-center flex-col items-center h-fit w-[600px] p-6 lg:p-0'>
@@ -77,7 +77,12 @@ function App() {
             </li>
           </ul>
         </div>
-        <a target='_blank' href="https://www.nytimes.com/2022/01/25/magazine/inshallah.html" className="w-full flex flex-col mt-12 text-xl p-4 rounded-lg bg-gray-50 hover:bg-gray-100" rel="noreferrer">
+        <a
+          className="w-full flex flex-col mt-12 text-xl p-4 rounded-lg bg-gray-50 hover:bg-gray-100 hover:cursor-pointer overflow-hidden"
+          href="https://www.nytimes.com/2022/01/25/magazine/inshallah.html"
+          rel="noreferrer"
+          target='_blank'
+        >
           <img src={nyt} alt='New York Times Logo' className="w-[275px] -mb-8 -mt-12" />
           <h3 className="font-merriweather font-bold text-[28px] leading-9">
             Are Better Things Coming? <span className="bg-yellow-200 px-2">Inshallah.</span>
@@ -93,8 +98,8 @@ function App() {
           <a
             className="bg-yellow-200 py-3 px-5 rounded-lg flex gap-2 justify-center items-center w-fit"
             href="https://www.buymeacoffee.com/farzany"
-            target='_blank'
             rel="noreferrer"
+            target='_blank'
           >
             <img src={bmc} className="h-[26px]" alt="Buy Me a Coffee logo"/>
             <span className="text-2xl font-semibold">
@@ -114,5 +119,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
