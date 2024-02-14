@@ -1,7 +1,5 @@
 import React from 'react';
-import bmc from './images/bmc.png';
-import heart from './images/heart.png';
-import nyt from './images/nyt.png';
+import VideoModal from './VideoModal';
 
 export default function App() {
   return (
@@ -15,16 +13,27 @@ export default function App() {
             Arabic Expression
           </span>
         </div>
-        <span className="ml-[-5px] w-full pt-4 text-3xl font-medium text-gray-500">
-          [ in · shāʾ · Allāh ]
-        </span>
+        <div className="flex w-full pt-4">
+          <span className="ml-[-5px] w-full text-3xl font-medium text-gray-500">
+            [ in · shāʾ · Allāh ]
+          </span>
+          <VideoModal />
+        </div>
         <p className="mt-6 w-full border-l-4 border-gray-400 pl-2 text-2xl font-medium text-gray-700">
           {`Literally, "if God wills it" or "God willing".`}
         </p>
         <p className="mt-8 w-full text-xl">
           {`A heartfelt expression that intertwines hope with the acceptance of divine will. It's used warmly to convey optimism for the future, acknowledging that everything happens according to a greater plan. Whether making plans, facing uncertainties, or expressing hopes and wishes, "Inshallah" is a gentle reminder of our reliance on and trust in the divine. It's a phrase that brings comfort and fosters a sense of peace, reminding us that we are not alone in our journey through life.`}
         </p>
-        <div className="w-full pt-12">
+        <div className="mb-10 mt-12 flex w-full flex-col items-center">
+          <h4 className="mb-6 text-3xl font-semibold">
+            <span className="bg-yellow-200 px-2">Inshallah</span>{' you achieve all of your goals and wildest dreams 🤲'}
+          </h4>
+          <h5 className="mb-6 text-3xl font-semibold">
+            <span className="bg-yellow-200 px-2">Inshallah</span>{' you and your loved ones live 100 joyful years with good health 🤲'}
+          </h5>
+        </div>
+        <div className="w-full">
           <h2 className="text-2xl font-semibold">
             Examples & Use Cases
           </h2>
@@ -83,7 +92,7 @@ export default function App() {
           rel="noreferrer"
           target="_blank"
         >
-          <img src={nyt} alt="New York Times Logo" className="-mb-8 -mt-12 w-[275px]" />
+          <img src="images/nyt.png" alt="New York Times Logo" className="-mb-8 -mt-12 w-[275px]" />
           <h3 className="font-merriweather text-[28px] font-bold leading-9">
             Are Better Things Coming? <span className="bg-yellow-200 px-2">Inshallah.</span>
           </h3>
@@ -91,26 +100,21 @@ export default function App() {
             Whatever language you speak, “inshallah” can bring you hope. When I was growing up, my family used ...
           </p>
         </a>
-        <div className="mb-20 mt-12 flex w-full flex-col items-center lg:mb-0 lg:mt-20">
-          <h4 className="mb-6 text-center text-3xl font-semibold">
-            {"Inshallah you'll buy me a coffee 🤲"}
-          </h4>
+        <footer className="absolute bottom-0 flex flex-col items-center pb-8 text-lg font-medium">
           <a
-            className="flex w-fit items-center justify-center gap-2 rounded-lg bg-yellow-200 px-5 py-3"
+            className="mb-5 flex w-fit items-center justify-center gap-2 rounded-lg bg-yellow-200 px-5 py-3"
             href="https://www.buymeacoffee.com/farzany"
             rel="noreferrer"
             target="_blank"
           >
-            <img src={bmc} className="h-[26px]" alt="Buy Me a Coffee logo"/>
-            <span className="text-2xl font-semibold">
+            <img src="images/bmc.png" className="h-[24px]" alt="Buy Me a Coffee logo"/>
+            <span className="text-xl font-semibold">
               Buy me a coffee {'<3'}
             </span>
           </a>
-        </div>
-        <footer className="absolute bottom-0 pb-8 text-lg font-medium">
           <span className="flex items-center justify-center">
             Made with
-            <img src={heart} className="h-5 px-[6px]" alt="Love"/>
+            <img src="images/heart.png" className="h-5 px-[6px]" alt="Love"/>
             by
             <a className="pl-[6px] underline decoration-2" href="https://www.youtube.com/@farzany" target="_blank" rel="noreferrer">Farzan Yazdanjou</a>
           </span>
