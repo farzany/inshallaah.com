@@ -3,23 +3,23 @@ import VideoModal from './VideoModal';
 
 export default function App() {
   return (
-    <div className="relative flex min-h-screen w-screen items-center justify-center overflow-y-scroll py-12 font-inter text-gray-800 lg:py-48">
+    <div className="relative flex min-h-screen w-screen items-center justify-center overflow-y-scroll pb-48 pt-16 font-inter text-gray-800 selection:bg-yellow-200 lg:pt-48">
       <div className="flex h-fit w-[600px] flex-col items-center justify-center p-6 lg:p-0">
-        <h1 className="ml-[-13.5px] w-full font-merienda text-7xl font-bold lg:text-8xl">
+        <h1 className="ml-[-11px] w-full font-merienda text-7xl font-bold lg:ml-[-13.5px] lg:text-8xl">
           Inshallah
         </h1>
         <div id="tags" className="mt-8 flex w-full gap-3">
-          <span className="rounded bg-gray-500 px-2 py-0.5 text-xl font-bold text-white">
+          <span className="select-none rounded bg-gray-500 px-2 py-0.5 text-xl font-bold text-white">
             Arabic Expression
           </span>
         </div>
-        <div className="flex w-full pt-4">
-          <span className="ml-[-5px] w-full text-3xl font-medium text-gray-500">
+        <div className="m-auto ml-[-3.4px] flex w-fit items-center justify-center pt-4">
+          <span className="text-3xl font-medium text-gray-500">
             [ in · shāʾ · Allāh ]
           </span>
           <VideoModal />
         </div>
-        <p className="mt-6 w-full border-l-4 border-gray-400 pl-2 text-2xl font-medium text-gray-700">
+        <p className="mt-6 w-full border-l-4 border-gray-500 pl-2 text-2xl font-medium text-gray-700">
           {`Literally, "if God wills it" or "God willing".`}
         </p>
         <p className="mt-8 w-full text-xl">
