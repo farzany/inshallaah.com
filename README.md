@@ -1,6 +1,6 @@
 # Inshallaah.com
 
-Not to be mistaken with [inshallah.com]("https://inshallah.com/en/") - the haram dating website - this is a static website that shares the meaning and significance of the word 'Inshallah'. A guest appearance by Christiano Ronaldo, world-famous football (soccer) player completes the dictionary page.
+Not to be mistaken with [inshallah.com](https://inshallah.com/en/) - the haram dating website - this is a static website that shares the meaning and significance of the word 'Inshallah'. A guest appearance by Christiano Ronaldo, world-famous football (soccer) player completes the dictionary page.
 
 ### Why? 🤔
 
