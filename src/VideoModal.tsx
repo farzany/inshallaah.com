@@ -37,7 +37,7 @@ export default function VideoModal() {
   return (
     <>
       <button className="m-auto ml-4" onClick={openModal}>
-        <img className="w-9" src="images/audio.png" alt="" />
+        <img className="w-8 sm:w-9" src="images/audio.png" alt="" />
       </button>
       <div onClick={closeModal} className={`${showModal ? 'opacity-100' : 'invisible opacity-0'} fixed inset-0 flex items-center justify-center bg-black/60 transition-all duration-300`}>
         <div onClick={stopPropagation} className="relative w-[90%] sm:w-[400px]">
