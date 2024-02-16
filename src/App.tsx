@@ -100,7 +100,7 @@ export default function App() {
             Whatever language you speak, “inshallah” can bring you hope. When I was growing up, my family used ...
           </p>
         </a>
-        <footer className="absolute bottom-0 flex flex-col items-center pb-8 text-lg font-medium">
+        <footer className="absolute bottom-0 z-0 flex flex-col items-center pb-8 text-lg font-medium">
           <a
             className="mb-8 flex w-fit items-center justify-center gap-2 rounded-lg bg-yellow-200 px-5 py-3"
             href="https://www.buymeacoffee.com/farzany"
